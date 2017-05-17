@@ -1,10 +1,8 @@
 package com.nishtahir;
 
 import java.security.MessageDigest;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Kata {
 
@@ -55,5 +53,15 @@ public class Kata {
             }
         }
         return permutations;
+    }
+
+    static int duplicateCount(String text) {
+        return (int) Arrays.stream(text.toLowerCase()
+                .split(""))
+                .collect(Collectors.groupingBy(c -> c, Collectors.counting()))
+                .values()
+                .stream()
+                .filter(i -> i > 1)
+                .count();
     }
 }

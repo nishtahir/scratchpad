@@ -34,4 +34,19 @@ public class KataTest {
         assertEquals("GoOutside", Kata.crackSha256("b8c49d81cb795985c007d78379e98613a4dfc824381be472238dbd2f974e37ae", "deGioOstu"));
         assertEquals(null, Kata.crackSha256("f58262c8005bb64b8f99ec6083faf050c502d099d9929ae37ffed2fe1bb954fb", "abc"));
     }
+
+    @Test
+    public void abcdeReturnsZero() {
+        assertEquals(0, Kata.duplicateCount("abcde"));
+    }
+
+    @Test
+    public void abcdeaReturnsOne() {
+        assertEquals(1, Kata.duplicateCount("abcdea"));
+    }
+
+    @Test
+    public void indivisibilityReturnsOne() {
+        assertEquals(1, Kata.duplicateCount("indivisibility"));
+    }
 }
