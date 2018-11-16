@@ -2,9 +2,16 @@ package com.nishtahir;
 
 import org.junit.Test;
 
+import java.security.NoSuchAlgorithmException;
+
 import static org.junit.Assert.assertEquals;
 
 public class KataTest {
+
+    @Test
+    public void exampleTest() {
+        assertEquals("odd", Kata.oddOrEven(new int[]{2, 5, 34, 6}));
+    }
 
     @Test
     public void testPermutation() throws Exception {
@@ -48,5 +55,13 @@ public class KataTest {
     @Test
     public void indivisibilityReturnsOne() {
         assertEquals(1, Kata.duplicateCount("indivisibility"));
+    }
+
+    @Test
+    public void testKeyHasher() throws Exception {
+        String result = Kata.keyHasher("cnn");
+        System.out.println(result);
+        //098F6BCD4621D373CADE4E832627B4F6
+        //098f6bcd4621d373cade4e832627b4f6
     }
 }
