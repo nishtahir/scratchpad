@@ -1,7 +1,7 @@
 # Scratchpad
 
-This is my personal scratchpad project. Pretty much just
-a dumping ground for programming puzzles, thoughts
-or just arbitrary experiments. It is not organized in
-any particular way or guaranteed to produce the results
+This is my personal scratchpad project. It is a dumping ground for programming puzzles, thoughts
+and arbitrary experiments. 
+
+It is NOT organized in any particular way, guaranteed to compile or  produce the results
 that it claims to be attempting to solve.
